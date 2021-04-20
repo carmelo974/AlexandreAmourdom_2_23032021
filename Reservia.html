@@ -13,14 +13,15 @@
         <main>
             
             <header>
-                <div class="nav_bar"><div class="logo"><img src="images/logo/Reservia@3x.png" alt="logoreservia" width="100" height="40" ></div>
+                
+                <div class="logo"><img src="images/logo/Reservia@3x.png" alt="logoreservia" width="100" height="40" ></div>
                     <nav class="navigation">
                         <a href="#hebergements" id="nav_hebergement">Hébergements</a>
                         <a href="#activites" id="nav_activites">Activités</a>
                     </nav>  
                         <div class="inscrire"><p>S'inscrire</p> </div>
                     
-                </div>      
+                     
                 
             </header>
 
@@ -34,10 +35,11 @@
                     <div class="form"><form method="POST" action="#"></div>
 
                         <span class="search"><i class="fas fa-map-marker-alt"></i><label for="ville"></label></span>
-                        <input type="text" name="ville" class="texte_recherche" placeholder="Ex : Marseille,France " size="20" maxlength="30" /><button class="boutton_recherche"
-                        type="button">
-                        <div>
-                        <span class="rechercher">Rechercher</span></button>
+                        <input class="texte_recherche" type="search" name="recherche" placeholder="Marseille, France">
+                        <div class="loupe">
+                            <span class="rechercher">Rechercher</span>
+                            <span class="mini_loupe"><i class="fas fa-search" aria-hidden="true"></i></span> 
+                        </div>    
                         </div>
 
                     </form>
@@ -47,10 +49,10 @@
                         <div class="filtres">
                             <h2 class="titre_filtres">Filtres</h2>
                             <div class="bloc_container_filtre">
-                                <span class="icon_eco blue" ><i class="fas fa-money-bill-wave"></i>Economique</span>
-                                <span class="icon_famille blue"><i class="fas fa-child"></i>Familial</span>
-                                <span class="icon_romantique"><i class="fas fa-heart" ></i>Romantique</span>
-                                <span class="icon_animaux"><i class="fas fa-dog"></i>Animaux autorisés</span> 
+                                <span class="filtre blue" ><i class="fas fa-money-bill-wave"></i>Economique</span>
+                                <span class="filtre blue"><i class="fas fa-child"></i>Familial</span>
+                                <span class="filtre"><i class="fas fa-heart" ></i>Romantique</span>
+                                <span class="filtre"><i class="fas fa-dog"></i>Animaux autorisés</span> 
                             </div>
                         </div>
 
@@ -232,13 +234,13 @@
         <section id="activites">
                 <div class="titre_activite_mars"><h2>Activités à Marseille</h2></div>
                 <div class="container_activites">
-                    <div class="activites_marseille">
+                    
                         <div class="activite_1">
                             <a href="#">
                                 <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
                                 <div class="titre_activite"><h2>Vieux Port</h2></div> 
                             </a>
-                        </div>
+                        
                     </div>
 
                     <div class="colonne_1">
