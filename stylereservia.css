@@ -222,39 +222,6 @@ a:hover
 
 }
 
-icon_famill
-{
-    border: 2px solid #F2F2F2;
-    border-left: 0px;
-    border-radius: 20px 20px 20px 20px;
-    display: inline-block;
-    padding-right: 12px;
-    font-weight: bold;
-    margin-right: 20px;
-
-}
-
-icon_romantique
-{
-    border: 2px solid #F2F2F2;
-    border-left: 0px;
-    border-radius: 20px 20px 20px 20px;
-    display: inline-block;
-    padding-right: 12px;
-    font-weight: bold;
-    margin-right: 20px;
-}
-
-icon_animaux
-{
-    border: 2px solid #F2F2F2;
-    border-left: 0px;
-    border-radius: 20px 20px 20px 20px;
-    display: inline-block;
-    padding-right: 12px;
-    font-weight: bold;
-    margin-right: 20px;
-}
 
 .fa-stack
 {
@@ -270,8 +237,9 @@ icon_animaux
 
 .stars
 {
-    color: blue;
+    color: #0065fc;
     margin: 10px;
+    font-size: 11px;
 }
 
 .container_hebergement
@@ -291,6 +259,7 @@ icon_animaux
     margin-right: 30px;
     margin-left: 20px;
     padding: 25px;
+
 
 }
 
@@ -323,16 +292,18 @@ icon_animaux
 {
     background-color: white;
     width: 30%;
-    height: 30vh;
+    height: auto;
     border-radius: 20px;
     box-shadow: 2px 2px 12px #CDCAD1;
     margin-bottom: 40px;
+    font-size: 11px;
 }
 
 .bloc_hebergement .titre_hôtel
 {
    margin: 10px;
-   font-weight: bold; 
+   font-weight: bold;
+   font-size: 13px; 
 }
 
 .prix
@@ -340,6 +311,7 @@ icon_animaux
     color: black;
     font-weight: normal;
     margin: 10px;
+    font-size: 13px;
 }
 
 .gras
@@ -390,7 +362,6 @@ icon_animaux
    font-weight: bold;
    justify-content: space-around;
    align-items: center;
-
 }
 
 
@@ -407,7 +378,7 @@ icon_animaux
 .bloc_populaires img
 {
     width: 130px;
-    height: 150px;
+    height: auto;
     border: 4px solid white;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
@@ -418,12 +389,17 @@ icon_animaux
     flex-direction: row;
   }
 
-.bloc_populaires .info_pop
+.info_pop
 {
     display: flex;
     flex-direction: column;
+    font-size: 12px;
 }
 
+.titre_hôtel_pop
+{
+    font-size: 13px;
+}
 
 .bloc_container_filtre
 {
@@ -548,7 +524,7 @@ h1, h2, p
     height: 200px;
     border-radius: 20px;
     box-shadow: 2px 2px 12px #CDCAD1;
-    
+    margin-bottom: 10%;
 }
 
 .activite_5 img
@@ -565,7 +541,6 @@ h1, h2, p
     height: 215px;
     border-radius: 20px;
     box-shadow: 2px 2px 12px #CDCAD1;
-    margin-top: 10%;
 }
 
 .activite_6 img
@@ -608,7 +583,7 @@ h1, h2, p
 
 /* media querie desktop */
 
-@media screen and (min-width: 992px) and (max-width: 1024px)
+media screen and (min-width: 992px) 
 {
     .main
     {
@@ -643,7 +618,7 @@ h1, h2, p
     {
         font-size: 13px;
         width: 16vw;
-        height: 25vh;
+        height: auto;
     }
 
     .bloc_hebergement img
@@ -679,15 +654,15 @@ h1, h2, p
     {
         font-size: 11px;
         width: 20vw;
-        height: 21vh;
+        height: auto;
     }
 
     .bloc_populaires img
     {
         width: 10vw;
-        height: 20vh;
+        height: auto;
     }
-/********************activiytes****************/
+/********************activites****************/
     #activites
     {
         display: flex;
@@ -825,6 +800,7 @@ h1, h2, p
     margin-right: 10px;
     
 }
+
 
 
 .contenu_footer
@@ -1023,12 +999,13 @@ h1, h2, p
     .bloc_footer
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .contenu_footer
     {
         font-size: 13px;
+        margin-left: 20px;
     }
 
 }
@@ -1095,9 +1072,18 @@ h1, h2, p
         cursor: pointer;
         top: 0;
         color: white;
+        
     }
 
+    .ifas
+    {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+ 
     .rechercher
     {
         display: none;
