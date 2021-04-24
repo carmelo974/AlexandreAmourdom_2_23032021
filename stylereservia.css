@@ -246,7 +246,6 @@ a:hover
 {
     display: flex;
     margin-top: 20px;
-    
 }
 
 #section_hebergements
@@ -259,13 +258,10 @@ a:hover
     margin-right: 30px;
     margin-left: 20px;
     padding: 25px;
-
-
 }
 
 .bloc_carte_hebergement
 {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -277,7 +273,6 @@ a:hover
     height: 16vh;
     border-radius: 20px 20px 0px 0px;
     border: 4px solid white;
-
 }
 
 .bloc_hebergementmarseille
@@ -352,7 +347,6 @@ a:hover
 {
     display: flex;
     flex-direction: column;
-
 }
 
 .bloc_titre_populaires 
@@ -368,7 +362,6 @@ a:hover
 
 .bloc_populaires 
 {
-    
     border-radius: 20px;
     margin: 20px;
     box-shadow: 2px 2px 12px #CDCAD1;
@@ -585,15 +578,12 @@ h1, h2, p
 
 media screen and (min-width: 992px) 
 {
-    .main
+    
+
+    .navigation
     {
         width: auto;
-    }
-
-    .navigation{
-        width: auto;
         text-align: center;
-
     }
 
     #section_hebergements
@@ -804,9 +794,9 @@ media screen and (min-width: 992px)
 
 
 .contenu_footer
-{
+    {
     font-size: 13px;
-}
+    }
 
 }
 
@@ -1016,38 +1006,51 @@ media screen and (min-width: 992px)
     
     header
     {
-        width: 100%;
         display: flex;
+        flex-direction: row;
+        align-items: center;
         flex-wrap: wrap;
-        position: relative;
     }
 
     .logo
     {
-        margin-left: 25px;
+        margin-right: auto;
+        margin-left: 20px;
     }
 
-    .navigation 
+    .navigation
     {
+        display: flex;
+        order: 3;
+        width: 100%;
+        justify-content: space-around;
+        border-top: none;
+    }
+
+
+    #nav_hebergement
+    {
+        border-bottom:  3px solid #f2f2f2;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    #nav_activites
+    {
+        border-bottom:  3px solid #f2f2f2;
         text-align: center;
         width: 100%;
-        padding-top: 25px;
-        border-bottom: 3px solid #f2f2f2;
-        padding-bottom: 10px;
     }
 
     .navigation a:hover
     {
         border-top: none;
-        border-bottom:  3px solid #0065fc;
     }
 
     .inscrire
     {
-        position: absolute;
-        top: 2;
-        right: 0;
-        margin-bottom: 50px;
+        margin-right: 40px;
     }
         
     .formulaire
@@ -1072,7 +1075,11 @@ media screen and (min-width: 992px)
         cursor: pointer;
         top: 0;
         color: white;
-        
+        margin-left: -5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .ifas
@@ -1102,8 +1109,6 @@ media screen and (min-width: 992px)
         margin-right: auto;
         margin-left: 20px;
         font-size: 1.1em;
-      
-
     }
 
     .bloc_container_filtre
@@ -1152,7 +1157,7 @@ media screen and (min-width: 992px)
     .bloc_hebergement
     {
         width: 95%;
-        height: 34vh;
+        height: auto;
         margin-bottom: 15px;
     }
 
@@ -1194,7 +1199,7 @@ media screen and (min-width: 992px)
     .activite_1
     {
         width: 90vw;
-        height: 30vh;
+        height: auto;
         margin-bottom: 30px;
     }
 
@@ -1217,7 +1222,7 @@ media screen and (min-width: 992px)
     {
         margin-top: 20px;
         width: 90vw;
-        height: 30vh;
+        height: auto;
     }
 
     .activite_2 img
@@ -1230,7 +1235,7 @@ media screen and (min-width: 992px)
     .activite_3
     {
         width: 90vw;
-        height: 30vh;
+        height: auto;
         margin-bottom: 40px;
     }
 
@@ -1245,7 +1250,7 @@ media screen and (min-width: 992px)
     {
         margin-bottom: 25px;
         width: 90vw;
-        height: 30vh;
+        height: auto;
     }
 
     .activite_5 img
@@ -1259,7 +1264,7 @@ media screen and (min-width: 992px)
     {
         margin-bottom: 40px;
         width: 90vw;
-        height: 30vh;
+        height: auto;
     }
 
     .activite_4 img
@@ -1272,7 +1277,6 @@ media screen and (min-width: 992px)
     .activite_6
     {
         width: 90vw;
-        height: 30vh;
     }
 
     .activite_6 img
@@ -1293,8 +1297,7 @@ media screen and (min-width: 992px)
     {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        
+        padding-left: 20px; 
     }
     
     .contenu_footer
