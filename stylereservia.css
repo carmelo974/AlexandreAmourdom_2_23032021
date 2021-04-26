@@ -81,9 +81,7 @@ a:hover
 
 #nav_activites
 {
-
     padding: 30px; 
-    margin-bottom: 5px;
 }
 
 .inscrire p
@@ -576,7 +574,7 @@ h1, h2, p
 
 /* media querie desktop */
 
-media screen and (min-width: 992px) 
+@media screen and (min-width: 992px) 
 {
     
 
@@ -595,6 +593,7 @@ media screen and (min-width: 992px)
     .titre_hebergement
     {
         font-size: 13px;
+        margin-bottom: 15px;
     }
 
     .bloc_carte_hebergement
@@ -619,6 +618,9 @@ media screen and (min-width: 992px)
     .bloc_hebergementmarseille
     {
         margin-right: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
 /*********aside***********/
@@ -630,20 +632,22 @@ media screen and (min-width: 992px)
     .bloc_titre_populaires
     {
         font-size: 13px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .container_carte_populaires
     {
         width: 100%;
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
 
 
     .bloc_populaires
     {
         font-size: 11px;
-        width: 20vw;
+        width: 30vw;
         height: auto;
     }
 
@@ -670,7 +674,7 @@ media screen and (min-width: 992px)
 
     .titre_activite
     {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .activite_1
@@ -891,14 +895,13 @@ media screen and (min-width: 992px)
 
     .titre_activite
     {
-        font-size: 12px;
+        font-size: 9px;
     }
 
     .activite_1
     {
         width: 29vw;
         height: 30vh;
-        margin-bottom: 20px;
     }
 
     .activite_1 img
@@ -1018,34 +1021,47 @@ media screen and (min-width: 992px)
         margin-left: 20px;
     }
 
+    .logo img
+    {
+        width: 100px;
+    }
+
     .navigation
     {
         display: flex;
         order: 3;
         width: 100%;
-        justify-content: space-around;
-        border-top: none;
+        border-bottom:  3px solid #f2f2f2;
     }
 
 
     #nav_hebergement
     {
-        border-bottom:  3px solid #f2f2f2;
         width: 100%;
         text-align: center;
-        
+        padding-bottom: 10px;
+        flex: 1 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 50%;
+        border-top: none;
     }
 
     #nav_activites
     {
-        border-bottom:  3px solid #f2f2f2;
+        
         text-align: center;
         width: 100%;
+        flex: 1 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 50%;
+        border-top: none;
     }
 
     .navigation a:hover
     {
-        border-top: none;
+        border-bottom: 3px solid #0065fc;
     }
 
     .inscrire
@@ -1174,6 +1190,13 @@ media screen and (min-width: 992px)
         display: flex;
         justify-content: space-between;
         margin-left: 20px;
+    }
+
+    .bloc_populaires
+    {
+        width: auto;
+        height: auto;
+        margin-bottom: 15px;
     }
 
     .info_pop
