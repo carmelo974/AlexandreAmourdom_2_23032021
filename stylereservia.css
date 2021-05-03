@@ -123,7 +123,7 @@ a:hover
 .search
 {
     border: 1px solid #F2F2F2 ;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
     padding: 10px;
     background-color: #F2F2F2;
 }
@@ -142,7 +142,7 @@ a:hover
     display: flex;
     background-color: #0065FC;
     color: white;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 10px 10px 0px;
     padding: 10px;
     border: none;
     font-weight: bold;
@@ -218,7 +218,6 @@ a:hover
     font-weight: bold;
     margin-right: 20px;
     cursor: pointer;
-
 }
 
 
@@ -240,6 +239,11 @@ a:hover
     font-size: 11px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.star_grey
+{
+    color: #c9c5c5;
 }
 
 .container_hebergement
@@ -372,12 +376,13 @@ a:hover
     margin: 20px;
     box-shadow: 2px 2px 12px #CDCAD1;
     background-color: white;
+    height: auto;
 }
 
 .bloc_populaires img
 {
-    width: 130px;
-    height: auto;
+    width: 10vw;
+    height: 18vh;
     border: 4px solid white;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
@@ -620,6 +625,7 @@ h1, h2, p
     .bloc_hebergement img
     {
         height: 13vh;
+        object-fit: cover;
     }
 
     .bloc_hebergementmarseille
@@ -661,7 +667,8 @@ h1, h2, p
     .bloc_populaires img
     {
         width: 10vw;
-        height: auto;
+        height: 18vh;
+        object-fit: cover;
     }
 /********************activites****************/
     #activites
@@ -846,6 +853,20 @@ h1, h2, p
     .titre_hôtel_pop
     {
         font-size: 13px;
+    }
+
+    .bloc_populaires img
+    {
+        width: 25vw;
+        height: 18vh;
+        border: 4px solid white;
+        border-radius: 20px 0px 0px 20px;
+        object-fit: cover;
+    }
+
+    #aside
+    {
+        margin-bottom: 40px;
     }
 
     .container_hebergement
@@ -1039,7 +1060,6 @@ h1, h2, p
         display: flex;
         order: 3;
         width: 100%;
-        border-bottom:  3px solid #f2f2f2;
     }
 
 
@@ -1067,9 +1087,14 @@ h1, h2, p
         border-top: none;
     }
 
-    .navigation a:hover
+    nav a:hover
     {
         border-bottom: 3px solid #0065fc;
+    }
+    
+    nav a
+    {
+        border-bottom:  3px solid #f2f2f2;
     }
 
     .inscrire
@@ -1158,12 +1183,15 @@ h1, h2, p
     }
 /********section hebergement*******/
 
+    .titre_hebergement
+    {
+        margin-left: 20px;
+    }
 
     .container_hebergement
     {
         display: flex;
         flex-direction: column-reverse;
-        
     }
 
     .bloc_hebergementmarseille
@@ -1171,11 +1199,17 @@ h1, h2, p
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-left: 20px;
     }
 
     #hebergements
     {
         background-color: white;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
 
     .bloc_hebergement
@@ -1189,6 +1223,11 @@ h1, h2, p
     {
         width: 98%;
         height: 23vh;
+        object-fit: cover;
+    }
+
+    .afficher_plus{
+        margin-left: 30px;
     }
 
     /***********aside**************/
@@ -1198,6 +1237,13 @@ h1, h2, p
         margin-bottom: 10%;
         background-color: #f2f2f2;
         border-radius: 0px;
+        margin-right: 0px;
+    }
+
+    .bloc_populaires a
+    {
+        display: flex;
+        flex-direction: row;
     }
 
     .bloc_titre_populaires
@@ -1212,6 +1258,15 @@ h1, h2, p
         width: auto;
         height: auto;
         margin-bottom: 15px;
+    }
+
+    .bloc_populaires img
+    {
+        width: 25vw;
+        height: 20vh;
+        border: 4px solid white;
+        border-radius: 20px 0px 0px 20px;
+        object-fit: cover;
     }
 
     .info_pop
@@ -1336,7 +1391,6 @@ h1, h2, p
     {
         display: flex;
         flex-direction: column;
-        padding-left: 20px; 
     }
     
     .contenu_footer
