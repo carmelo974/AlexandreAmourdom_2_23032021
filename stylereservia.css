@@ -120,12 +120,13 @@ a:hover
     align-content: flex-end;
 }
 
-.search
+.search .fas 
 {
     border: 1px solid #F2F2F2 ;
     border-radius: 10px 0px 0px 10px;
     padding: 10px;
     background-color: #F2F2F2;
+    color: black;
 }
 
 #texte_recherche
@@ -134,6 +135,7 @@ a:hover
     color: black;
     padding: 11px;
     border: 1px solid #F2F2F2;
+    width: 260px;
 
 }
 
@@ -155,6 +157,8 @@ a:hover
     display: flex;
     align-content: flex-end;
 }
+
+
 
 .mini_loupe i 
 {
@@ -225,6 +229,22 @@ a:hover
 .bloc_info
 {
     display: flex;
+}
+
+.far 
+{
+    color: #f2f2f2;
+}
+
+.fas 
+{
+    color: #0065fc;
+}
+
+.fa-stack
+{
+    font-size: small;
+    vertical-align: center
 }
 
 /* hebergement */
@@ -347,13 +367,14 @@ a:hover
     flex-direction: column;
 }
 
-.bloc_titre_populaires 
+.bloc_titre_populaires .fas
 {
    display: flex;
    font-size: 15px;
    font-weight: bold;
    justify-content: space-around;
    align-items: center;
+   color: black;
 }
 
 .titre_hôtel_pop_price
